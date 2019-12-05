@@ -1,0 +1,58 @@
+﻿@model List<AdoApproachDisplay.Models.EmployeeModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<table class="table table-hover">
+
+    <tr>
+        <th>EmpID</th>
+        <th>EmpName</th>
+        <th>Password</th>
+        <th>CPassword</th>
+        <th>Salary</th>
+        <th>Address</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.EmpID</td>
+            <td>@item.EmpName</td>
+            <td>@item.Password</td>
+            <td>@item.CPassword</td>
+            <td>@item.Salary</td>
+            <td>@item.Address</td>
+            <td>
+
+
+            
+
+                
+                
+                @Html.ActionLink("Edit","Edit", new { EmpId=@item.EmpID}) 
+
+                @Html.ActionLink("Delete", "Delete", new { EmpId = @item.EmpID })
+            </td>
+
+            
+        </tr>
+
+        // first edit is name of link and 2nd edit is action method 
+    }
+</table>
+

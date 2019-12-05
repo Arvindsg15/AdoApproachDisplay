@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    
+       
+        Layout = "~/Views/Shared/_MasterLayout.cshtml";
+    
+
+}
+
+<h2>Create</h2>
+
+<form action="~/Employee/Create" method="post">
+
+    <table>
+        <tr>
+            <td>EmpName</td>
+            <td><input type="text" name="EmpName" /></td>
+
+        </tr>
+
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="Password" /> </td>
+        </tr>
+
+        <tr>
+            <td>Confirm Password</td>
+            <td><input type="password" name="CPassword"><br> </td>
+        </tr>
+
+        <tr>
+            <td>Salary</td>
+            <td> <input type="text" name="Salary"><br> </td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="Address"><br> </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"> <input type="submit" value="Submit" /></td>
+        </tr>
+
+        <tr>
+            <td><label>@ViewBag.RowInserted </label> </td>
+        </tr>
+
+
+    </table>
+
+
+</form>
+
+
+

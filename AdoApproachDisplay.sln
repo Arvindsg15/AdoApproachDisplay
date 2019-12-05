@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoApproachDisplay", "AdoApproachDisplay\AdoApproachDisplay.csproj", "{F5E4632A-0BFF-4CC6-A92F-FC023502476F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkexample", "EntityFrameworkexample\EntityFrameworkexample.csproj", "{230274B9-86FE-4EDB-8AD7-6E3D2FA62B0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5E4632A-0BFF-4CC6-A92F-FC023502476F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E4632A-0BFF-4CC6-A92F-FC023502476F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E4632A-0BFF-4CC6-A92F-FC023502476F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E4632A-0BFF-4CC6-A92F-FC023502476F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{230274B9-86FE-4EDB-8AD7-6E3D2FA62B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230274B9-86FE-4EDB-8AD7-6E3D2FA62B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230274B9-86FE-4EDB-8AD7-6E3D2FA62B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230274B9-86FE-4EDB-8AD7-6E3D2FA62B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

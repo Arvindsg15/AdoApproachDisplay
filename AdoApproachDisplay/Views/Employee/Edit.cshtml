@@ -1,0 +1,58 @@
+﻿@model AdoApproachDisplay.Models.EmployeeModel
+@{
+    ViewBag.Title = "Create";
+   
+        Layout = "~/Views/Shared/_MasterLayout.cshtml";
+   
+
+}
+
+<h2>Create</h2>
+
+<form action="~/Employee/Edit" method="post">
+
+    <table>
+        <tr>
+            <td>EmpName</td>
+            <td><input type="text" name="EmpName" value="@Model.EmpName"/>
+            <input type="hidden" value="@Model.EmpID" name="EmpId"/>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="Password" value="@Model.Password" /> </td>
+        </tr>
+
+        <tr>
+            <td>Confirm Password</td>
+            <td><input type="password" name="CPassword" value="@Model.CPassword"><br> </td>
+        </tr>
+
+        <tr>
+            <td>Salary</td>
+            <td> <input type="text" name="Salary" value="@Model.Salary"><br> </td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="Address" value="@Model.Address"><br> </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"> <input type="submit" value="Submit" /></td>
+        </tr>
+
+        @*<tr>
+            <td><label>@ViewBag.RowInserted </label> </td>
+        </tr>*@
+
+
+    </table>
+
+
+</form>
+
+
+
